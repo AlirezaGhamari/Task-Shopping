@@ -1,9 +1,13 @@
+import Cards from '@/components/Products/Cards'
+import ProductNavbar from '@/components/Products/ProductNavbar'
 import React from 'react'
 
 function page() {
   return (
-    <div>
-      Products
+    <div className='w-full flex items-center flex-col gap-5'>
+      search
+      <ProductNavbar/>
+      <Cards/>
     </div>
   )
 }
