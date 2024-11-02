@@ -1,4 +1,5 @@
 import "./globals.css";
+import StoreProvider from "./StoreProvider";
 
 
 
@@ -11,7 +12,9 @@ export default function RootLayout({
     <html lang="en" dir="ltr">
       <body className="bg-slate-100"
       >
-        {children}
+       <StoreProvider>
+          {children}
+        </StoreProvider>
       </body>
     </html>
   );
