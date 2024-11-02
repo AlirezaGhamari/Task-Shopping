@@ -1,45 +1,58 @@
 {
-    "products":[
+    "products": [
         {
-            "id":1,
-            "category":"main courses",
-            "name":"Shrimp Burger",
-            "description":"Wheat bun,crispy shrimps.pickles",
-            "price":"$17,99",
-            "weight":"350g",
-            "images":"https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
-            
+            "id": 1,
+            "category": "main courses",
+            "nameProduct": "Shrimp Burger",
+            "description": "Wheat bun,crispy shrimps.pickles",
+            "price": "$17,99",
+            "weight": "350g",
+            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
         },
         {
-            "id":2,
-            "category":"main courses",
-            "name":"Red Beets Burger",
-            "description":"Red bun,beet paty,corn",
-            "price":"$12,99",
-            "weight":"350g",
-            "images":"https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
-
-
+            "id": 2,
+            "category": "main courses",
+            "nameProduct": "Red Beets Burger",
+            "description": "Red bun,beet paty,corn",
+            "price": "$12,99",
+            "weight": "350g",
+            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
         },
         {
-            "id":3,
-            "category":"main courses",
-            "name":"Avocrazy Burger",
-            "description":"Wheat bun,crispy shrimps,avocado",
-            "price":"$12,99",
-            "weight":"350g"
-,            "images":"https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
-
+            "id": 3,
+            "category": "main courses",
+            "nameProduct": "Avocrazy Burger",
+            "description": "Wheat bun,crispy shrimps,avocado",
+            "price": "$12,99",
+            "weight": "350g",
+            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
         },
         {
-            "id":4,
-            "category":"main courses",
-            "name":"Peanut Burger",
-            "description":"Wheat bun,veggie patty,spinach",
-            "price":"$12,99",
-            "weight":"350g",
-            "images":"https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
-
+            "id": 4,
+            "category": "main courses",
+            "nameProduct": "Peanut Burger",
+            "description": "Wheat bun,veggie patty,spinach",
+            "price": "$12,99",
+            "weight": "350g",
+            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
+        },
+        {
+            "id": 5,
+            "category": "drinks",
+            "nameProduct": "cooka",
+            "description": " Coca-Cola Soda Can",
+            "price": "$8,99",
+            "weight": "300ml",
+            "images": "https://banner2.cleanpng.com/20180704/ufz/aawf7csvs.webp"
+        },
+        {
+            "id": 6,
+            "category": "drinks",
+            "nameProduct": "fanta",
+            "description": "Orange Fanta Can",
+            "price": "$8,99",
+            "weight": "300ml",
+            "images": "https://banner2.cleanpng.com/20180804/elp/07d24a6e791a80655db57efc19c7e994.webp"
         }
     ]
 }

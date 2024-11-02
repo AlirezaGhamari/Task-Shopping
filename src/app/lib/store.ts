@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { sidebarAddProductSlice } from "./slices/sidbarAddProduct";
+import { ProductSlice } from "./slices/productsData";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       sidebarAddProduct: sidebarAddProductSlice.reducer,
+      ProductState :ProductSlice.reducer
     },
   });
 };

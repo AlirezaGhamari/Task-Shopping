@@ -11,7 +11,7 @@ export default function NavbarItems() {
   const [items] = useState([
     { title: "Dashboard", icon: <MdDashboard />, link: "/dashboard" },
     { title: "Orders", icon: <BiSolidShoppingBagAlt />, link: "/orders" },
-    { title: "Products", icon: <MdOutlineProductionQuantityLimits />, link: "/products" },
+    { title: "Products", icon: <MdOutlineProductionQuantityLimits />, link: "/products" ,},
     { title: "Restaurants", icon: <IoLocationSharp />, link: "/restaurants" },
     { title: "Drivers", icon: <MdPerson4 />, link: "/drivers" },
   ]);

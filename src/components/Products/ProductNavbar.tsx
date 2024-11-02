@@ -5,13 +5,16 @@ import { TbSoupFilled } from "react-icons/tb";
 import { RiDrinks2Fill } from "react-icons/ri";
 import { GiDonerKebab } from "react-icons/gi";
 import { CiMenuKebab } from "react-icons/ci";
+import { useAppDispatch } from '@/app/lib/hooks';
+import { ProductSlice } from '@/app/lib/slices/productsData';
 
 export default function ProductNavbar() {
+  const dispatch = useAppDispatch()
   
   const items = [
-    { title: "Main courses", icon: <PiHamburgerFill className='text-[24px]' /> },
+    { title: "Main courses", icon: <PiHamburgerFill className='text-[24px]' />,onclick:()=> dispatch(ProductSlice.actions.courses())},
     { title: "Side dishes", icon: <TbSoupFilled className='text-[24px]' /> },
-    { title: "Drinks", icon: <RiDrinks2Fill className='text-[24px]' /> },
+    { title: "Drinks", icon: <RiDrinks2Fill className='text-[24px]' /> ,onclick:()=> dispatch(ProductSlice.actions.drinks())},
     { title: "Other", icon: <GiDonerKebab className='text-[24px]' /> }
   ];
 
@@ -22,6 +25,7 @@ export default function ProductNavbar() {
         <ul className='flex gap-10'>
           {items.map((i, index) => (
             <li 
+            onClick={i.onclick}
               key={index} 
               className='flex justify-center items-center gap-2 cursor-pointer hover:text-slate-700'
             >

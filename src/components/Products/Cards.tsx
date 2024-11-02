@@ -1,22 +1,38 @@
-import React from 'react'
-import Card from './Card'
-import CardNew from './CardNew'
+import { useAppSelector } from '@/app/lib/hooks';
+import Card from './Card';
+import CardNew from './CardNew';
 
-function Cards() {
-  
-
-  return (
-    <div className=' w-[90%]  grid grid-cols-4 gap-8 '>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-<CardNew/>
-    </div>
-  )
+export interface Product {
+  id: any;
+  nameProduct: string;
+  images: string[];
+  weight: number;
+  description: string;
+  price: number;
+  category: string;
 }
 
-export default Cards
+function Cards() {
+  const data = useAppSelector((state: any) => state.ProductState.data) as Product[];
+
+  return (
+    <div className='w-[90%] grid grid-cols-4 gap-8'>
+      {data?.map((product: Product, index: number) => (
+        <Card
+          key={index}
+          id={product.id}
+          nameProduct={product.nameProduct}
+          images={product.images}
+          weight={product.weight}
+          description={product.description}
+          price={product.price}
+          category={product.category}
+        />
+      ))}
+      <CardNew />
+    </div>
+  );
+}
+
+export default Cards;
+
