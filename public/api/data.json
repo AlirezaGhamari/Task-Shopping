@@ -47,7 +47,7 @@
             "description": " Coca-Cola Soda Can",
             "price": "$8,99",
             "weight": "300ml",
-            "images": "https://banner2.cleanpng.com/20180704/ufz/aawf7csvs.webp"
+            "images": "../images/7029fea03d399b744e910f88ab433d50.png"
         },
         {
             "id": 6,
@@ -56,7 +56,7 @@
             "description": "Orange Fanta Can",
             "price": "$8,99",
             "weight": "300ml",
-            "images": "https://banner2.cleanpng.com/20180804/elp/07d24a6e791a80655db57efc19c7e994.webp"
+"images":"../images/0c12b21c79382530c7fa227b812c4a30.png"
         }
     ]
 }

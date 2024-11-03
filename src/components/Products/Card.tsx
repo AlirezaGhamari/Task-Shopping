@@ -8,6 +8,7 @@ interface CardProps {
   weight?: number;
   description?: string;
   price?: number;
+  category?:string
 }
 
 function Card({
@@ -16,6 +17,7 @@ function Card({
   weight,
   description,
   price,
+  category
 }: CardProps): JSX.Element {
   return (
     <div className=" bg-white  rounded-xl flex flex-col justify-center items-center   gap-4 p-4">
@@ -23,8 +25,8 @@ function Card({
         className="mt-[-50px] "
         src={images}
         alt={`Product ${nameProduct}`}
-        width={150}
-        height={150}
+        width={`${category=="drinks"?70:150}`}
+        height={`${category=="drinks"?70:150}`}
       />
       <div className="flex flex-col gap-1 justify-center items-center">
       <p className="text-[22px] font-extrabold"> {nameProduct}</p>

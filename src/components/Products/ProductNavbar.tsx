@@ -1,5 +1,5 @@
 "use client"
-import React, {  } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PiHamburgerFill } from "react-icons/pi";
 import { TbSoupFilled } from "react-icons/tb";
 import { RiDrinks2Fill } from "react-icons/ri";
@@ -7,9 +7,11 @@ import { GiDonerKebab } from "react-icons/gi";
 import { CiMenuKebab } from "react-icons/ci";
 import { useAppDispatch } from '@/app/lib/hooks';
 import { ProductSlice } from '@/app/lib/slices/productsData';
+import { usePathname } from 'next/navigation';
 
 export default function ProductNavbar() {
   const dispatch = useAppDispatch()
+  const [active,setActive]=useState("")
   
   const items = [
     { title: "Main courses", icon: <PiHamburgerFill className='text-[24px]' />,onclick:()=> dispatch(ProductSlice.actions.courses())},
@@ -17,7 +19,6 @@ export default function ProductNavbar() {
     { title: "Drinks", icon: <RiDrinks2Fill className='text-[24px]' /> ,onclick:()=> dispatch(ProductSlice.actions.drinks())},
     { title: "Other", icon: <GiDonerKebab className='text-[24px]' /> }
   ];
-
   return (
     <>
     
