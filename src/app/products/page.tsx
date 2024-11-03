@@ -9,7 +9,7 @@ function Page() {
   const show = useAppSelector((state) => state.sidebarAddProduct.isModalOpen);
 
   return (
-    <div className='w-full flex items-center flex-col gap-5'>
+    <div className='w-full flex items-center flex-col gap-10'>
       {show && (
         <Sidbar/>
       )}

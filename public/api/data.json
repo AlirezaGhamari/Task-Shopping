@@ -1,3 +1,4 @@
+
 {
     "products": [
         {
@@ -7,16 +8,17 @@
             "description": "Wheat bun,crispy shrimps.pickles",
             "price": "$17,99",
             "weight": "350g",
-            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
+            "images": "../images/6a6e0e4bfe1ac28c289fa289bc018d2a.png"
         },
         {
             "id": 2,
             "category": "main courses",
             "nameProduct": "Red Beets Burger",
-            "description": "Red bun,beet paty,corn",
+            "description": "Red bun,beet paty,corn,veggie patty",
             "price": "$12,99",
             "weight": "350g",
-            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
+            "images": "../images/6a6e0e4bfe1ac28c289fa289bc018d2a.png"
+
         },
         {
             "id": 3,
@@ -25,16 +27,18 @@
             "description": "Wheat bun,crispy shrimps,avocado",
             "price": "$12,99",
             "weight": "350g",
-            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
+            "images": "../images/6a6e0e4bfe1ac28c289fa289bc018d2a.png"
+
         },
         {
             "id": 4,
             "category": "main courses",
             "nameProduct": "Peanut Burger",
-            "description": "Wheat bun,veggie patty,spinach",
+            "description": "Wheat bun,veggie patty,spinach,veggie patty",
             "price": "$12,99",
             "weight": "350g",
-            "images": "https://banner2.cleanpng.com/20231216/cjw/transparent-hamburger-digital-illustration-of-appetizing-golden-brown-1710972149036.webp"
+            "images": "../images/6a6e0e4bfe1ac28c289fa289bc018d2a.png"
+
         },
         {
             "id": 5,

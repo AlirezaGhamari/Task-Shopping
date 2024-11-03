@@ -22,7 +22,7 @@ export default function ProductNavbar() {
     <>
     
       <div className='bg-white w-[90%] h-[10%] rounded-xl flex justify-between items-center px-14'>
-        <ul className='flex gap-10'>
+        <ul className='flex gap-20'>
           {items.map((i, index) => (
             <li 
             onClick={i.onclick}
