@@ -80,7 +80,7 @@ function Sidbar() {
         </div>
         <div className="flex mt-4 gap-2">
           <div>
-            <label htmlFor="Weight" className="text-[16px] ">
+            <label htmlFor="Weight" className="text-[16px] font-bold">
               Weight in grams
             </label>
             <input
@@ -93,7 +93,7 @@ function Sidbar() {
             />
           </div>
           <div>
-            <label htmlFor="Calories" className="text-[16px] ">
+            <label htmlFor="Calories" className="text-[16px] font-bold">
               Calories
             </label>
             <input
@@ -103,7 +103,7 @@ function Sidbar() {
             />
           </div>
         </div>
-        <label htmlFor="Price" className="text-[16px] mt-4">
+        <label htmlFor="Price" className="text-[16px] mt-4 font-bold">
           Price of product
         </label>
         <input
@@ -117,7 +117,7 @@ function Sidbar() {
         />
       </form>
       <button
-      className="bg-gray-700 flex justify-center items-center text-white text-[16px] p-2 rounded-md hover:text-slate-100 hover:bg-gray-600"
+      className="bg-gray-700 flex justify-center items-center text-white text-[18px] p-2 rounded-md hover:text-slate-100 hover:bg-gray-600"
         onClick={() =>
           dispatch(
             ProductSlice.actions.add({
@@ -131,7 +131,7 @@ function Sidbar() {
           )
         }
       >
-        <div>
+        <div className="flex justify-center items-center gap-1 mr-4">
         <FaPlus />
         <FaHamburger />
 

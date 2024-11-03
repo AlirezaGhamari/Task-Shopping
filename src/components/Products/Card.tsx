@@ -39,8 +39,8 @@ function Card({
       <div className="flex justify-between w-full items-center ">
         <p className="text-2xl">{price}</p>
         <div className="flex items-center gap-1  ">
-          <MdOutlineVisibility className="border-2 w-10 h-10 p-1 rounded-md " />
-          <IoMdSettings className="border-2 w-10 h-10 p-1 rounded-md " />
+          <MdOutlineVisibility className="border-2 w-10 h-10 p-2 rounded-md " />
+          <IoMdSettings className="border-2 w-10 h-10 p-2 rounded-md " />
         </div>
       </div>
     </div>
