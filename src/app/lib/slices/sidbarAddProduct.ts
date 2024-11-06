@@ -1,29 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-export interface SidbarAddProductState {
-    isModalOpen: boolean;
-}
-
-const initialState: SidbarAddProductState = {
-    isModalOpen: false
-};
+// In your slice file (e.g., sidebarAddProductSlice.ts)
 
 
 export const sidebarAddProductSlice = createSlice({
-    name: "sidebarAddProduct",
-  initialState,
-  reducers: {
-      show: (state) => {
-          state.isModalOpen = !state.isModalOpen;
-          return state;
-        },
+    name: 'sidebar',
+    initialState: { isModalOpen: false },
+    reducers: {
+    show: state => {
+        state.isModalOpen = true;
     },
-
+      hide: state => {
+        state.isModalOpen = false;
+    }
+  },
 });
 
-
-// Action creators are generated for each case reducer function
-export const { show } = sidebarAddProductSlice.actions;
+// Export the action creators
+export const { show, hide } = sidebarAddProductSlice.actions;
 
 export default sidebarAddProductSlice.reducer;

@@ -5,7 +5,6 @@ function layout({children}:{children:React.ReactNode}) {
 
   return (
     <div className=' w-full h-screen'>
-      <Navbar/>
       {children}
     </div>
   )

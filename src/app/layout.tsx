@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 
@@ -10,12 +11,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="ltr">
-      <body className="bg-slate-100 "
+      <StoreProvider>
+
+      <body className="bg-slate-100 flex "
       >
-       <StoreProvider>
+        <Navbar/>
           {children}
-        </StoreProvider>
       </body>
+        </StoreProvider>
     </html>
   );
 }

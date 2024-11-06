@@ -7,21 +7,20 @@ import { GiDonerKebab } from "react-icons/gi";
 import { CiMenuKebab } from "react-icons/ci";
 import { useAppDispatch } from '@/app/lib/hooks';
 import { ProductSlice } from '@/app/lib/slices/productsData';
-import { usePathname } from 'next/navigation';
 
 export default function ProductNavbar() {
-  const dispatch = useAppDispatch()
-  const [active,setActive]=useState("")
+  const dispatch = useAppDispatch();
   
   const items = [
-    { title: "Main courses", icon: <PiHamburgerFill className='text-[24px]' />,onclick:()=> dispatch(ProductSlice.actions.courses())},
+    { title: "Main courses", icon: <PiHamburgerFill className='text-[24px]' />, onclick: () => dispatch(ProductSlice.actions.courses()) },
     { title: "Side dishes", icon: <TbSoupFilled className='text-[24px]' /> },
-    { title: "Drinks", icon: <RiDrinks2Fill className='text-[24px]' /> ,onclick:()=> dispatch(ProductSlice.actions.drinks())},
+    { title: "Drinks", icon: <RiDrinks2Fill className='text-[24px]' />, onclick: () => dispatch(ProductSlice.actions.drinks()) },
     { title: "Other", icon: <GiDonerKebab className='text-[24px]' /> }
   ];
+
+  useEffect(() => { dispatch(ProductSlice.actions.courses()); }, []);
   return (
     <>
-    
       <div className='bg-white w-[90%] h-[10%] rounded-xl flex justify-between items-center px-14'>
         <ul className='flex gap-20'>
           {items.map((i, index) => (
@@ -38,7 +37,6 @@ export default function ProductNavbar() {
           <CiMenuKebab className='text-[24px] cursor-pointer' />
         </div>
       </div>
-     
     </>
   );
 }

@@ -28,10 +28,10 @@ function Sidbar() {
         <div>Add new product</div>
 
         <div
-          onClick={() => dispatch(sidebarAddProductSlice.actions.show())}
+          onClick={() => dispatch(sidebarAddProductSlice.actions.hide())}
           className="text-[30px]"
         >
-          <IoClose className="cursor-pointer" />
+          <IoClose className="cursor-pointer hover:text-red-500" />
         </div>
       </div>
       {/* line two */}
