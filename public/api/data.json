@@ -57,6 +57,30 @@
             "price": "$8,99",
             "weight": "300ml",
 "images":"../images/0c12b21c79382530c7fa227b812c4a30.png"
+        }, {
+            "id": 7,
+            "category": "drinks",
+            "nameProduct": "fanta",
+            "description": "Orange Fanta Can",
+            "price": "$8,99",
+            "weight": "300ml",
+"images":"../images/0c12b21c79382530c7fa227b812c4a30.png"
+        }, {
+            "id": 8,
+            "category": "drinks",
+            "nameProduct": "fanta",
+            "description": "Orange Fanta Can",
+            "price": "$8,99",
+            "weight": "300ml",
+"images":"../images/0c12b21c79382530c7fa227b812c4a30.png"
+        }, {
+            "id": 9,
+            "category": "drinks",
+            "nameProduct": "fanta",
+            "description": "Orange Fanta Can",
+            "price": "$8,99",
+            "weight": "300ml",
+"images":"../images/0c12b21c79382530c7fa227b812c4a30.png"
         }
     ]
 }

@@ -15,11 +15,9 @@ export interface Product {
 function Cards() {
   const data = useAppSelector((state: any) => state.ProductState.data);
   
-  console.log('Data:', data);
-  console.log('Type of data:', typeof data);
 
   return (
-    <div className='w-[90%] grid grid-cols-4 gap-8'>
+    <div className='w-[95%] grid grid-cols-4 gap-8'>
       {Array.isArray(data) && data.map((product: Product, index: number) => (
         <Card
           key={index}

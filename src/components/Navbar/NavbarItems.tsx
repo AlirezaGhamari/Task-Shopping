@@ -31,7 +31,7 @@ export default function NavbarItems() {
         {items.map((item, index) => (
           <li
             key={index}
-            className={`px-[45px] py-4 hover:bg-slate-100 cursor-pointer ${
+            className={`px-[59px] py-4 hover:bg-slate-100 cursor-pointer ${
               active === item.link ? "bg-slate-100 border-x-4 border-green-500 ml-[-4px]" : ""
             }`}
           >

@@ -18,6 +18,8 @@ function Sidbar() {
   });
 
   return (
+    <div className="bg-black h-screen w-full bg-opacity-50 fixed">
+
     <div
       id="default-modal"
       tabIndex={-1}
@@ -139,6 +141,8 @@ function Sidbar() {
         Add product to the menu
       </button>
     </div>
+    </div>
+
   );
 }
 

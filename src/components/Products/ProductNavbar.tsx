@@ -21,7 +21,7 @@ export default function ProductNavbar() {
   useEffect(() => { dispatch(ProductSlice.actions.courses()); }, []);
   return (
     <>
-      <div className='bg-white w-[90%] h-[10%] rounded-xl flex justify-between items-center px-14'>
+      <div className='bg-white w-[95%] h-[10%]  rounded-xl flex justify-between items-center px-14'>
         <ul className='flex gap-20'>
           {items.map((i, index) => (
             <li 

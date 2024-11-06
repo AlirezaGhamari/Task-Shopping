@@ -8,10 +8,13 @@ interface ProductItem {
 
 export interface ProductState {
   data: ProductItem[];
+  names: ProductItem[];
+
 }
 
 const initialState: ProductState = {
-    data:[]
+    data: [],
+    names: dataProduct.products.map(i => ({ category: i.category, nameProduct: i.nameProduct }))
 };
 
 
@@ -39,6 +42,6 @@ export const ProductSlice = createSlice({
 
 
 // Action creators are generated for each case reducer function
-export const {  courses} = ProductSlice.actions;
+export const {  courses,drinks} = ProductSlice.actions;
 
 export default ProductSlice.reducer;

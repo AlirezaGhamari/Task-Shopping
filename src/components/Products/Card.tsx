@@ -20,7 +20,7 @@ function Card({
   category
 }: CardProps): JSX.Element {
   return (
-    <div className=" bg-white  rounded-xl flex flex-col justify-center items-center   gap-4 p-4">
+    <div className=" bg-white rounded-xl flex flex-col justify-center items-center   gap-4 p-4">
       <img
         className="mt-[-50px] "
         src={images}

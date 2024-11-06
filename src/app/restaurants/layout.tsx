@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '@/components/Navbar/Navbar'
 
 function layout({children}:{children:React.ReactNode}) {
 
