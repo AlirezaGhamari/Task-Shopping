@@ -1,6 +1,8 @@
 import React from "react";
 import { MdOutlineVisibility } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
+import { useAppDispatch } from "@/app/lib/hooks";
+import { sidebarAddProductSlice } from "@/app/lib/slices/sidbarAddProduct";
 
 interface CardProps {
   nameProduct?: string;
@@ -19,6 +21,10 @@ function Card({
   price,
   category
 }: CardProps): JSX.Element {
+  const dispatch = useAppDispatch()
+  const eyeHandler= ()=>{
+    dispatch(sidebarAddProductSlice.actions.show())
+  }
   return (
     <div className=" bg-white rounded-xl flex flex-col justify-center items-center   gap-4 p-4">
       <img
@@ -39,8 +45,8 @@ function Card({
       <div className="flex justify-between w-full items-center ">
         <p className="text-2xl">{price}</p>
         <div className="flex items-center gap-1  ">
-          <MdOutlineVisibility className="border-2 w-10 h-10 p-2 rounded-md " />
-          <IoMdSettings className="border-2 w-10 h-10 p-2 rounded-md " />
+          <MdOutlineVisibility className="border-2 w-10 h-10 p-2 rounded-md cursor-pointer hover:text-slate-500" onClick={()=>eyeHandler()} />
+          <IoMdSettings className="border-2 w-10 h-10 p-2 rounded-md cursor-pointer  hover:text-slate-500" onClick={()=>eyeHandler()}/>
         </div>
       </div>
     </div>
