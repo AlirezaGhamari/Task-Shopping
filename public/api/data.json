@@ -81,6 +81,33 @@
             "price": "$8,99",
             "weight": "300ml",
 "images":"../images/0c12b21c79382530c7fa227b812c4a30.png"
+        },
+        {
+            "id": 10,
+            "category": "other",
+            "nameProduct": "kebab",
+            "description": "Grilled Skewers with Meat and Vegetables",
+            "price": "$28,99",
+            "weight": "350gr",
+"images":"../images/f12edff5935c29b8164d1846eb4e1c9d.png"
+        },
+        {
+            "id": 11,
+            "category": "other",
+            "nameProduct": "kebab",
+            "description": "Grilled Skewers with Meat and Vegetables",
+            "price": "$26,99",
+            "weight": "350gr",
+"images":"../images/f12edff5935c29b8164d1846eb4e1c9d.png"
+        },
+        {
+            "id": 12,
+            "category": "other",
+            "nameProduct": "kebab",
+            "description": "Grilled Skewers with Meat and Vegetables",
+            "price": "$24,99",
+            "weight": "350gr",
+"images":"../images/f12edff5935c29b8164d1846eb4e1c9d.png"
         }
     ]
 }

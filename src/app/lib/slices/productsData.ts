@@ -14,7 +14,7 @@ export interface ProductState {
 
 const initialState: ProductState = {
     data: [],
-    names: dataProduct.products.map(i => ({ category: i.category, nameProduct: i.nameProduct }))
+    names: dataProduct.products.map(i => ({ category: i.category, nameProduct: i.nameProduct,id:i.id }))
 };
 
 
@@ -35,6 +35,9 @@ export const ProductSlice = createSlice({
     },
     drinks: (state) => {
       state.data = dataProduct.products.filter((i) => i.category === "drinks");
+    },
+    other: (state) => {
+      state.data = dataProduct.products.filter((i) => i.category === "other");
     },
   
   },
